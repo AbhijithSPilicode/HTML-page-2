@@ -1,0 +1,40 @@
+body{
+    color:red;
+}   /*bottom selector will have more preference*/
+
+.title{
+    font-size:6rem;
+/*media queries are used to suit different screen width,resolution*/ 
+
+}
+
+.subtitle{
+    font-size: 4rem;
+}
+
+
+@media all and (max-width:500px){  /*all is used to represent all type of screens like mobile,lap,desktop*/
+    body{
+        color:blue;   /*so here ifwidth of window<500 this property will apply*/
+    }            /*move the window to see the effect*/
+}
+
+@media print{
+    body{
+        color:green; /*whenever printing it will change text to green.go to webpage and ctrl+p to see it*/
+    }   
+}
+
+
+                        /*, is for or*/
+@media(orientation:landscape),(max-width:500px){  /*landscape:width>height,otherways portrait mode)*/
+    .title{
+        color:rgb(25, 238, 43);
+    }
+}
+
+@media(orientation:portrait){  /*portrait mode:height>width*/
+    .title{
+        color:rgb(230, 27, 152);
+    }
+}
