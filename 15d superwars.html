@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Super Wars</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .character-container {
+            flex-basis: 30%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Super Wars</h1>
+
+    <div class="container">
+        <div class="character-container" id="hero-container">
+            <img src="https://github.com/Kalvium-Program/lab-superwars-stage-2/blob/main/images/super-1.png?raw=true" width="150">
+            <h2>Spiderman</h2>
+            <p>Score: <span id="hero-score">0</span></p>
+        </div>
+
+        <div class="character-container" id="score-container">
+            <h2>Total Score</h2>
+            <p id="total-score">0 - 0</p>
+        </div>
+
+        <div class="character-container" id="villain-container">
+            <img src="https://github.com/Kalvium-Program/lab-superwars-stage-2/blob/main/images/super-20.png?raw=true"  width="150">
+            <h2>Thanos</h2>
+            <p>Score: <span id="villain-score">0</span></p>
+        </div>
+    </div>
+
+    <button onclick="startBattle()">Start Battle</button>
+
+    <script>
+        var heroScore = 0;
+        var villainScore = 0;
+
+        function startBattle() {
+            var heroContainer = document.getElementById("hero-container");
+            var villainContainer = document.getElementById("villain-container");
+            var totalScoreElement = document.getElementById("total-score");
+
+            var hero = {
+                name: "Spiderman",
+                image: "https://github.com/Kalvium-Program/lab-superwars-stage-2/blob/main/images/super-1.png?raw=true"
+            };
+
+            var villain = {
+                name: "Thanos",
+                image: "https://github.com/Kalvium-Program/lab-superwars-stage-2/blob/main/images/super-20.png?raw=true"
+            };
+
+            var resultMessage = hero.name + " vs " + villain.name + ": ";
+            if (Math.random() < 0.5) {
+                resultMessage += "You win!";
+                heroScore++;
+            } else {
+                resultMessage += "You lose!";
+                villainScore++;
+            }
+
+            // Update the container contents
+            heroContainer.innerHTML = `<img src="${hero.image}" alt="${hero.name}" width="150">
+                                        <h2>${hero.name}</h2>
+                                        <p>Score: <span id="hero-score">${heroScore}</span></p>`;
+
+            villainContainer.innerHTML = `<img src="${villain.image}" alt="${villain.name}" width="150">
+                                           <h2>${villain.name}</h2>
+                                           <p>Score: <span id="villain-score">${villainScore}</span></p>`;
+
+            totalScoreElement.textContent = `${heroScore} - ${villainScore}`;
+
+            alert(resultMessage);
+        }
+    </script>
+</body>
+</html>
