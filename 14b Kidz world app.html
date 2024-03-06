@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="14b Kidz world app.css">
+        <script src="14b kidz world app.js" defer></script>
+        <title>Kidz world app</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="brand-title"><img src="https://github.com/Kalvium-Program/kidz-world-html/blob/main/assets/kw-logo.png?raw=true" width="120px" height="50px"></div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span> <!--for the line when window is small-->
+                <span class="bar"></span>  <!--3 span represent 3 lines of menu when it is small in window size-->
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><button onclick='SendWhatsappMessage();' ><img src="https://github.com/Kalvium-Program/kidz-world-html/blob/main/assets/cart-icon.png?raw=true" width="20px" height="20px"> Cart items : <span id="count">(0)</span></button></li> <!--# for when clicking nothing happens-->
+                </ul>
+            </div>    
+        </nav>
+        <div class="moto">
+            <img src="https://github.com/Kalvium-Program/kidz-world-html/blob/main/assets/kw-background.png?raw=true" style="width:100%;height:50%">
+            <div>
+                <ul>
+                    <li>Shop.</li>
+                    <li>Have Fun.</li>
+                    <li>Repeat.</li>
+                    <li class="smaller">#NewAndNow</li>
+                </ul>   
+            </div>
+        <div class="shop-item">
+            <table class="table">
+                <h2>Discover New Books</h2>
+                <tr>
+                    <td class="table"><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/book1.png?raw=true" width="150px" height="150px"> <div class="'shop-item-title"><b>This was our Pact</b></div><div class="Author">Ryan Andrews</div><span class="shop-item-price"><b>$7.49 </b></span><button class="button">Add<img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" width="10px" height="10px"> </button></td>
+                    <td class="table"><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/book2.png?raw=true" width="150px" height="150px"> <div class="'shop-item-title"><b>The famous five</b></div><div class="Author">Guid Biyton</div><div class="shop-item-price"><b>$4.59 </b><button class="button">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" width="10px" height="10px"> </button></div></td>
+                    <td class="table"><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/book3.png?raw=true" width="150px" height="150px"> <div class="'shop-item-title"><b>Matilda</b></div><div class="Author">Roald dalhi</div><div class="shop-item-price"><b> $6.80 </b> <button class="button">Add<img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" width="10px" height="10px">  </button></div></td>
+                    <td class="table"><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/book4.png?raw=true" width="150px" height="150px"> <div class="'shop-item-title"><b>Harry Potter</b></div><div class="Author">JK Rowling</div><div class="shop-item-price"><b> $10 </b> <button class="button">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" width="10px" height="10px"> </button></div></td>
+                    <td class="table"><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/book5.png?raw=true" width="150px" height="150px"> <div class="'shop-item-title"><b>FOr Young Readers</b></div><div class="Author">Rusjin bond</div><div class="shop-item-price"><b>$7.29 </b> <button class="button">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" width="10px" height="10px"> </button></div></td>
+                    <td class="table"><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/book6.png?raw=true" width="150px" height="150px"> <div class="'shop-item-title"><b>Wimpy Kid-DIY</b></div><div class="Author">Jeff Kinney</div><div class="shop-item-price"><b>$4.99 </b><button class="button">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" width="10px" height="10px"> </button></div></td>
+                </tr>
+            </table>   
+        </div>
+
+        <div>
+            <table class="table">
+                <h2>Discover New Games</h2>
+                <tr>
+                    <td class="table"><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/dart-board.png?raw=true" width="150px" height="150px"> <div class="'shop-item-title"><b>Dart board</b></div><div>wooden board,16inches</div><div class="shop-item-price"><b>$17.49 </b> <button class="button">Add<img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" width="10px" height="10px"></button></div></td>
+                    <td class="table"><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/connect-four.png?raw=true" width="150px" height="150px"> <div class="'shop-item-title"><b>Connect 4</b></div><div>Board game,multiplayer</div><div class="shop-item-price"><b>$19.99 </b> <button class="button">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" width="10px" height="10px"></button></div></td>
+                    <td class="table"><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/jenga.png?raw=true" width="150px" height="150px"> <div class="'shop-item-title"><b>Jenga</b></div><div>Wooden blocks,54 pieces</div><div class="shop-item-price"><b>$20.99 </b><button class="button">Add<img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" width="10px" height="10px"></button></div></td>
+                    <td class="table"><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/monopoly.png?raw=true" width="150px" height="150px"> <div class="'shop-item-title"><b>Monopoly</b></div><div>1.61x15.75x10.51inches</div><div class="shop-item-price"><b>$19.49 </b><button class="button">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" width="10px" height="10px"></button></div></td>
+                </tr>
+            </table>   
+        </div>
+
+        <div>
+            <table class="table">
+                <h2>Handmade with love</h2>
+                <tr>
+                    <td class="table"><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/bookmarks.png?raw=true" width="150px" height="150px"> <div class="'shop-item-title"><b>Bookmarks</b></div><div></div>Handmade with love<div class="shop-item-price"><b>$12.49</b><button class="button">Add<img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" width="10px" height="10px"></button></div></td>
+                    <td class="table"><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/birthday-card.png?raw=true" width="150px" height="150px"> <div class="'shop-item-title"><b>Birthday card</b></div><div>Handmade with love</div><div class="shop-item-price"><b>$19.99</b> <button class="button">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" width="10px" height="10px"></button></div></td>
+                    <td class="table"><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/stuffed-toy.png?raw=true" width="150px" height="150px"> <div class="'shop-item-title"><b>Stuffed toys</b></div><div>Handmade with love</div><div class="shop-item-price"><b>$15.99 </b><button class="button">Add<img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" width="10px" height="10px"></button></div></td>
+                    <td class="table"><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/dream-catcher.png?raw=true" width="150px" height="150px"> <div class="'shop-item-title"><b>Dream catcher drawing</b></div><div>Handmade with love</div><div class="shop-item-price"><b>$18.49 </b><button class="button">Add <img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/cart-icon-white.png?raw=true" width="10px" height="10px"></button></div></td>
+                </tr>
+            </table>   
+        </div>
+
+        <div class="end">
+           <div class="left">Brought to you by</div><div><img src="https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/krishti.png?raw=true" width="150px" height="150px" class="round"></div><div class="rightbottom3">Abhijith</div><div class="rightbottom2">Made with love by Kalvian</div><div class="rightbottom1">Talk to me at abhijith.S@gmail.com</div>
+        </div>
+    </body>
+</html>
